@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Shopping</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container mt-5 p-3 rounded cart">
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <div class="product-details mr-2">
+                    <div class="d-flex flex-row align-items-center"><span class="ml-2">Carrito de compras</span> <a href="../Login/index.html" name="register" id="register" class="btn btn-dark btn-xs ml-auto" role="button">Salir</a></div>
+                    <hr>
+                    <h6 class="mb-0">Shopping cart</h6>
+                    <div class="d-flex justify-content-between"><span>You have 4 items in your cart</span>
+                        <div class="d-flex flex-row align-items-center"><span class="text-black-50">Sort by:</span>
+                            <div class="price ml-2"><span class="mr-1">price</span><i class="fa fa-angle-down"></i></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="https://m.media-amazon.com/images/I/81GP+M75OmL._AC_UY500_.jpg" width="40">
+                            <div class="ml-2"><span class="font-weight-bold d-block">Shoes</span><span class="spec">Size: 38-39-40</span></div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center"><span class="d-block">2</span><span class="d-block ml-5 font-weight-bold">$900</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="https://hardzone.es/app/uploads-hardzone.es/2019/12/Procesadores-Intel-y-AMD.jpg" width="40">
+                            <div class="ml-2"><span class="font-weight-bold d-block">CPU</span><span class="spec">INTEL - AMD</span></div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center"><span class="d-block">2</span><span class="d-block ml-5 font-weight-bold">$900</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="https://media.admagazine.com/photos/618a619b2f01962557ac401d/4:3/w_3500,h_2625,c_limit/85094.jpg" width="40">
+                            <div class="ml-2"><span class="font-weight-bold d-block">Plants</span><span class="spec">Plants of all type</span></div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$800</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="https://i.ebayimg.com/thumbs/images/g/teMAAOSwYPNcPN~X/s-l225.jpg" width="40">
+                            <div class="ml-2"><span class="font-weight-bold d-block">Clothing&nbsp;</span><span class="spec">Male - Femenine</span></div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$999</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form action="">
+                <div class="payment-info ">
+                    <div class="d-flex justify-content-between align-items-center"><span>Card details</span><img class="rounded" width="30"></div><span class="type d-block mt-3 mb-1">Card type</span>
+                    <label class="radio"> <input type="radio" name="card" value="payment" checked ><span><img width="30" src="https://img.icons8.com/color/48/000000/mastercard.png" /></span> </label>
+                    <label class="radio"> <input type="radio" name="card" value="payment" required> <span><img width="30" src="https://img.icons8.com/officel/48/000000/visa.png" /></span> </label>
+                    <label class="radio"> <input type="radio" name="card" value="payment" required> <span><img width="30" src="https://img.icons8.com/ultraviolet/48/000000/amex.png" /></span> </label>
+                    <label class="radio"> <input type="radio" name="card" value="payment" required> <span><img width="30" src="https://img.icons8.com/officel/48/000000/paypal.png" /></span> </label>
+                    <div><label class="credit-card-label">Name on card</label><input type="text" class="form-control credit-inputs" placeholder="Name" id="name" required></div>
+                    <div><label class="credit-card-label">Card number</label><input type="number" class="form-control credit-inputs" placeholder="0000 0000 0000 0000" id="cart" required></div>
+                    <div class="row">
+                        <div class="col-md-6"><label class="credit-card-label">Date</label><input type="date" class="form-control credit-inputs" id="date" placeholder="12/24" required></div>
+                        <div class="col-md-6"><label class="credit-card-label">CVV</label><input type="number" class="form-control credit-inputs" id="cvv" placeholder="342" required></div>
+                    </div>
+                    <hr class="line">
+                    <div class="d-flex justify-content-between information"><span>Subtotal</span><span>$3599.00</span></div>
+                    <div class="d-flex justify-content-between information"><span>Shipping</span><span>$20.00</span></div>
+                    <div class="d-flex justify-content-between information"><span>Total(Incl. taxes)</span><span>$3619.00</span></div>
+                    <button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="submit" id="btn" >
+                        <span>$3619.00</span><span>Checkout</span>
+                    </button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

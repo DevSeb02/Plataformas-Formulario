@@ -1,0 +1,26 @@
+.tittle{
+    margin-top: 140px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.form-group {
+    margin-top: 100px;
+}
+p{
+text-align: center;
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+.forgot{
+    text-align: right;
+}
+
+.forgot a{
+    text-decoration:none;
+    color: black;
+}
+
